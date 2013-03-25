@@ -1,0 +1,29 @@
+uniform float4x4 modelViewProjection : state.matrix.mvp;
+
+uniform float randomPosMin;
+uniform float randomPosMax;
+uniform float randomPow;
+uniform float randomProb;
+
+void main (
+	in float4 iPosition : POSITION,
+	in float4 iTexCoord : TEXCOORD0,
+	in float4 iTexCoord1 : TEXCOORD1,
+	in float4 iTexCoord2 : TEXCOORD2,
+	in float4 iColor : COLOR0,
+	out float4 oPosition : POSITION,
+	out float4 oTexCoord : TEXCOORD0,
+	out float4 oTexCoord1 : TEXCOORD1,
+	out float4 oTexCoord2 : TEXCOORD2,
+	out float oPointSize : PSIZ,
+	out float4 oColor : COLOR0
+){
+	oPosition = mul(modelViewProjection,iPosition);
+	oTexCoord = iTexCoord;
+	oTexCoord2 = iTexCoord2;
+	oTexCoord1 = iTexCoord1;//  + 
+	oTexCoord1.xy += (iTexCoord.xy - 0.5) * lerp(randomPosMin, randomPosMax, pow(iTexCoord.z,randomPow)) * 1000;
+	
+	oColor = iColor * iTexCoord.w;
+}
+	           

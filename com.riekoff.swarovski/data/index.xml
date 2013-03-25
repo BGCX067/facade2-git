@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="12" mode="1" orientation="horizontal">
+	<tabpage name="MQ==" scalef="0.0" scalet="1.0">
+		<control name="YmF0dGVyeTE=" x="202" y="214" w="25" h="80"
+			color="red" type="batteryv" size="14" background="true" outline="true"></control>
+		<control name="dGltZTE=" x="240" y="370" w="25" h="80" color="red"
+			type="timev" size="14" background="true" outline="true" seconds="false"></control>
+		<control name="bXVsdGlwdXNoMQ==" x="344" y="360" w="200" h="200"
+			color="red" scalef="0.0" scalet="1.0" type="multipush" number_x="5"
+			number_y="5" local_off="false"></control>
+		<control name="bXVsdGlmYWRlcjE=" x="394" y="197" w="200" h="200"
+			color="red" scalef="0.0" scalet="1.0" type="multifaderv" inverted="false"
+			centered="false" number="5"></control>
+		<control name="bGVkMQ==" x="290" y="95" w="20" h="20" color="red"
+			scalef="0.0" scalet="1.0" type="led"></control>
+		<control name="eHkx" x="95" y="520" w="150" h="150" color="red"
+			scalef="0.0" scalet="1.0" type="xy" inverted_x="false" inverted_y="false"></control>
+		<control name="ZmFkZXIx" x="105" y="372" w="50" h="200" color="red"
+			scalef="0.0" scalet="1.0" type="faderv" response="absolute" inverted="false"
+			centered="false"></control>
+		<control name="ZmFkZXIy" x="124" y="265" w="200" h="50" color="red"
+			scalef="0.0" scalet="1.0" type="faderh" response="absolute" inverted="false"
+			centered="false"></control>
+		<control name="cm90YXJ5MQ==" x="160" y="155" w="100" h="100"
+			color="red" scalef="0.0" scalet="1.0" type="rotaryv" response="absolute"
+			inverted="false" centered="false" norollover="true"></control>
+		<control name="ZW5jb2RlcjE=" x="286" y="63" w="100" h="100"
+			color="red" scalef="0.0" scalet="1.0" type="encoder"></control>
+	</tabpage>
+</layout>

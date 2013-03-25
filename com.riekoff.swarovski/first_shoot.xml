@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Timeline lower_bound="0.0" upper_bound="10.0">
+	<Transport speed="1.0" loop_start="0.0" loop_end="9.0" loop_active="true">
+		<TrackData/>
+	</Transport>
+	<Tracks>
+		<GroupTrack name="/app/geometry" open="false" red="191" green="48" blue="48">
+			<Track address="/app/geometry/random pos min back" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="191" green="48" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/app/geometry/random pos max back" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="191" green="48" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/app/geometry/random pow back" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="10.0" red="191" green="48" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/app/geometry/random pos min fore" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="191" green="48" blue="48">
+				<TrackData>
+					<ControlPoint type="LINEAR" time="0.0" value="0.0"/>
+				</TrackData>
+			</Track>
+			<Track address="/app/geometry/random pos max fore" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="191" green="48" blue="48">
+				<TrackData>
+					<ControlPoint type="LINEAR" time="0.0" value="1.0"/>
+					<ControlPoint type="LINEAR" time="9.0" value="0.0"/>
+				</TrackData>
+			</Track>
+			<Track address="/app/geometry/random pow fore" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="10.0" red="191" green="48" blue="48">
+				<TrackData>
+					<ControlPoint type="LINEAR" time="0.056777856635912" value="0.19090909090909092"/>
+				</TrackData>
+			</Track>
+		</GroupTrack>
+		<GroupTrack name="/background/manager" open="false" red="191" green="134" blue="48">
+			<Track address="/background/manager/trace" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="191" green="134" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/manager/blur radius" mute="false" accumulate="false" type="DOUBLE" min="1.0" max="50.0" red="191" green="134" blue="48">
+				<TrackData/>
+			</Track>
+		</GroupTrack>
+		<GroupTrack name="/background/noise curve" open="false" red="163" green="191" blue="48">
+			<Track address="/background/noise curve/scale" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise curve/sub scale" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise curve/offset" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="100.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise curve/noise x" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1000.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise curve/noise y" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1000.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise curve/bands" mute="false" accumulate="false" type="DOUBLE" min="1.0" max="10.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise curve/lacunarity" mute="false" accumulate="false" type="DOUBLE" min="1.0" max="10.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise curve/gain" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise curve/noise output" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="10.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise curve/stroke weight" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="10.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise curve/alpha" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="163" green="191" blue="48">
+				<TrackData/>
+			</Track>
+		</GroupTrack>
+		<GroupTrack name="/background/noise wave" open="false" red="76" green="191" blue="48">
+			<Track address="/background/noise wave/noiseScaleX" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="100.0" red="76" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise wave/noiseScaleY" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="100.0" red="76" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise wave/speed x" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="76" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise wave/speed y" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="76" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise wave/speed z" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="76" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise wave/pow" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="10.0" red="76" green="191" blue="48">
+				<TrackData/>
+			</Track>
+			<Track address="/background/noise wave/alpha" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="76" green="191" blue="48">
+				<TrackData/>
+			</Track>
+		</GroupTrack>
+		<GroupTrack name="/foreground/manager" open="true" red="48" green="191" blue="105">
+			<Track address="/foreground/manager/trace" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="48" green="191" blue="105">
+				<TrackData>
+					<ControlPoint type="LINEAR" time="0.0" value="1.0"/>
+				</TrackData>
+			</Track>
+			<Track address="/foreground/manager/blur radius" mute="false" accumulate="false" type="DOUBLE" min="1.0" max="50.0" red="48" green="191" blue="105">
+				<TrackData>
+					<ControlPoint type="LINEAR" time="0.0" value="1.0"/>
+					<ControlPoint type="LINEAR" time="9.0" value="0.0"/>
+				</TrackData>
+			</Track>
+		</GroupTrack>
+		<GroupTrack name="/foreground/typo" open="false" red="48" green="191" blue="191">
+			<Track address="/foreground/typo/scale" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="48" green="191" blue="191">
+				<TrackData/>
+			</Track>
+			<Track address="/foreground/typo/space" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="10.0" red="48" green="191" blue="191">
+				<TrackData/>
+			</Track>
+			<Track address="/foreground/typo/speed" mute="false" accumulate="false" type="DOUBLE" min="-100.0" max="100.0" red="48" green="191" blue="191">
+				<TrackData/>
+			</Track>
+			<Track address="/foreground/typo/y" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="48" green="191" blue="191">
+				<TrackData/>
+			</Track>
+			<Track address="/foreground/typo/alpha" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="48" green="191" blue="191">
+				<TrackData/>
+			</Track>
+		</GroupTrack>
+		<GroupTrack name="/foreground/swan" open="false" red="48" green="105" blue="191">
+			<Track address="/foreground/swan/scale" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="48" green="105" blue="191">
+				<TrackData>
+					<ControlPoint type="LINEAR" time="0.2" value="1.0"/>
+				</TrackData>
+			</Track>
+			<Track address="/foreground/swan/space" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="10.0" red="48" green="105" blue="191">
+				<TrackData>
+					<ControlPoint type="LINEAR" time="0.24130589070262598" value="0.3727272727272727"/>
+				</TrackData>
+			</Track>
+			<Track address="/foreground/swan/speed" mute="false" accumulate="false" type="DOUBLE" min="-100.0" max="100.0" red="48" green="105" blue="191">
+				<TrackData>
+					<ControlPoint type="LINEAR" time="0.2" value="0.31818181818181823"/>
+				</TrackData>
+			</Track>
+			<Track address="/foreground/swan/y" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="48" green="105" blue="191">
+				<TrackData/>
+			</Track>
+			<Track address="/foreground/swan/alpha" mute="false" accumulate="false" type="DOUBLE" min="0.0" max="1.0" red="48" green="105" blue="191">
+				<TrackData>
+					<ControlPoint type="LINEAR" time="0.0" value="0.0"/>
+					<ControlPoint type="LINEAR" time="9.0" value="1.0"/>
+				</TrackData>
+			</Track>
+		</GroupTrack>
+	</Tracks>
+</Timeline>

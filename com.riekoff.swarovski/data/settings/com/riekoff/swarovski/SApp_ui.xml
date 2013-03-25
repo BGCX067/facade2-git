@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ui>
+	<CCControlPresetTab label="app" selectedpreset="0" numberofpresets="1">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="geometry">
+				<uielements>
+					<CCUISlider label="random pos min">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="random pos max">
+						<preset value="1.0"/>
+					</CCUISlider>
+					<CCUISlider label="random prob">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="random pow">
+						<preset value="3.1333332"/>
+					</CCUISlider>
+					<CCUISlider label="min bright">
+						<preset value="0.18666667"/>
+					</CCUISlider>
+					<CCUISlider label="max bright">
+						<preset value="9.133333"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="limit">
+				<uielements>
+					<CCUISlider label="rise">
+						<preset value="1.5999999"/>
+					</CCUISlider>
+					<CCUISlider label="fall">
+						<preset value="0.19999999"/>
+					</CCUISlider>
+					<CCUISlider label="speed">
+						<preset value="0.033333335"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+	<CCControlPresetTab label="visual" selectedpreset="0" numberofpresets="1">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="noise curve">
+				<uielements>
+					<CCUISlider label="scale">
+						<preset value="0.026666667"/>
+					</CCUISlider>
+					<CCUISlider label="sub scale">
+						<preset value="0.11333334"/>
+					</CCUISlider>
+					<CCUISlider label="offset">
+						<preset value="48.0"/>
+					</CCUISlider>
+					<CCUISlider label="noise x">
+						<preset value="66.66667"/>
+					</CCUISlider>
+					<CCUISlider label="noise y">
+						<preset value="66.66667"/>
+					</CCUISlider>
+					<CCUISlider label="bands">
+						<preset value="3.76"/>
+					</CCUISlider>
+					<CCUISlider label="lacunarity">
+						<preset value="1.9000001"/>
+					</CCUISlider>
+					<CCUISlider label="gain">
+						<preset value="0.43333334"/>
+					</CCUISlider>
+					<CCUISlider label="noise output">
+						<preset value="0.8666667"/>
+					</CCUISlider>
+					<CCUISlider label="stroke weight">
+						<preset value="10.0"/>
+					</CCUISlider>
+					<CCUISlider label="alpha">
+						<preset value="1.0"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
+	<globalsettings selectedpreset="0" numberofpresets="0" label="global">
+		<presetnames/>
+	</globalsettings>
+</ui>
