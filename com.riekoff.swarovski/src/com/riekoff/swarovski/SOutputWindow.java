@@ -8,7 +8,7 @@ public class SOutputWindow extends CCApp{
 	
 	@CCControl(name = "x Offset", min = -1000, max = 1000)
 	private int _cXOffset = 0;
-	@CCControl(name = "y Offset", min = -1000, max = 1000)
+	@CCControl(name = "y Offset", min = 0, max = 100)
 	private int _cYOffset = 0;
 	
 	private SGeometry _myGeometry;
