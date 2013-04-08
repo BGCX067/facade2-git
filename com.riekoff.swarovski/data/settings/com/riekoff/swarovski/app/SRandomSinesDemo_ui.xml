@@ -5,19 +5,25 @@
 			<CCUIPresetControl label="presets">
 				<uielements/>
 			</CCUIPresetControl>
-			<CCUIComponent label="app">
+			<CCUIComponent label="sines">
 				<uielements>
 					<CCUISlider label="speed">
-						<preset value="0.33333334"/>
+						<preset value="7.2000003"/>
 					</CCUISlider>
-					<CCUISlider label="pow">
-						<preset value="2.1333334"/>
+					<CCUISlider label="freq pow">
+						<preset value="1.0666667"/>
 					</CCUISlider>
-					<CCUISlider label="min">
-						<preset value="0.026666667"/>
+					<CCUISlider label="dark time">
+						<preset value="12.799999"/>
 					</CCUISlider>
-					<CCUISlider label="max">
-						<preset value="0.64666665"/>
+					<CCUISlider label="minBright">
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="maxBright">
+						<preset value="1.0"/>
+					</CCUISlider>
+					<CCUISlider label="bright pow">
+						<preset value="1.3333334"/>
 					</CCUISlider>
 				</uielements>
 			</CCUIComponent>
