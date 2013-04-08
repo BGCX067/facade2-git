@@ -45,6 +45,16 @@ public class SPixelMapper{
 	private float _cMinBright = 0;
 	@CCControl(name = "max bright", min = 0, max = 10)
 	private float _cMaxBright = 0;
+	@CCControl(name = "pow bright", min = 0, max = 10)
+	private float _cPowBright = 0;
+
+	@CCControl(name = "red", min = 0, max = 1)
+	private float _cRed = 0;
+	@CCControl(name = "green", min = 0, max = 1)
+	private float _cGreen = 0;
+	@CCControl(name = "blue", min = 0, max = 1)
+	private float _cBlue = 0;
+	
 	@CCControl(name = "pointsize", min = 1, max = 10)
 	private float _cPointSize = 0;
 	
@@ -72,6 +82,8 @@ public class SPixelMapper{
 	private CGparameter _myRandomProbForeParameter;
 	
 	private CGparameter _myMinMaxParameter;
+	private CGparameter _myPowValParameter;
+	private CGparameter _myColorParameter;
 
 	private CCTexture2D _myInputBack;
 	private CCTexture2D _myInputForeGround;
@@ -105,6 +117,8 @@ public class SPixelMapper{
 		_myRandomProbForeParameter  = _myShader.vertexParameter("randomProb2");
 		
 		_myMinMaxParameter  = _myShader.fragmentParameter("minMax");
+		_myPowValParameter  = _myShader.fragmentParameter("powVal");
+		_myColorParameter  = _myShader.fragmentParameter("color");
 		_myShader.load();
 	}
 	
@@ -224,6 +238,7 @@ public class SPixelMapper{
 		_myShader.parameter(_myRandomProbForeParameter, _cRandomProbFore);
 		
 		_myShader.parameter(_myMinMaxParameter, _cMinBright, _cMaxBright);
+		_myShader.parameter(_myPowValParameter, _cPowBright);
 		g.texture(0,_myInputBack);
 		g.texture(1,_myInputForeGround);
 		_myVBO.draw(g);
@@ -251,6 +266,7 @@ public class SPixelMapper{
 		_myShader.parameter(_myRandomProbForeParameter, _cRandomProbFore);
 		
 		_myShader.parameter(_myMinMaxParameter, _cMinBright, _cMaxBright);
+		_myShader.parameter(_myColorParameter, _cRed, _cGreen, _cBlue);
 		g.texture(0,_myInputBack);
 		g.texture(1,_myInputForeGround);
 		_myOutputGrid.draw(g);
