@@ -67,9 +67,13 @@ public class SLightAnimation {
 		_myForegroundVisualManager.addVisual(myQuadVisual);
 		theApp.addControls("foreground","quad", 3, myQuadVisual);
 		
+		SNoiseWavesVisual myWaveVisual1 = new SNoiseWavesVisual(ledMapWidth * 3, ledMapHeight);
+		_myForegroundVisualManager.addVisual(myWaveVisual1);
+		theApp.addControls("foreground","noise wave 1", 1, myWaveVisual1);
+		
 		SNoiseWavesVisual myWaveVisual2 = new SNoiseWavesVisual(ledMapWidth * 3, ledMapHeight);
 		_myForegroundVisualManager.addVisual(myWaveVisual2);
-		theApp.addControls("foreground","noise wave", 1, myWaveVisual2);
+		theApp.addControls("foreground","noise wave 2", 1, myWaveVisual2);
 		
 		_myModelDrawer = new SModelDrawer(_myModel);
 	
@@ -88,7 +92,7 @@ public class SLightAnimation {
 			return;
 		case AUTO:
 			_myTimeline = new TimelineContainer();
-			_myTimeline.loadFile("pres03.xml");
+			_myTimeline.loadFile("130408_pres01.xml");
 			_myTimeline.play();
 			break;
 		case EDIT:
