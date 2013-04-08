@@ -15,17 +15,17 @@ import cc.creativecomputing.math.CCMath;
 
 public class SRandomSines extends SVisual {
 	
-	@CCControl(name = "speed", min = 0, max = 20)
+	@CCControl(name = "speed", min = 0, max = 20, external = true)
 	private float _cSpeed = 0;
-	@CCControl(name = "freq pow", min = 0, max = 20)
+	@CCControl(name = "freq pow", min = 0, max = 20, external = true)
 	private float _cFreqPow = 0;
-	@CCControl(name = "dark time", min = 0, max = 200)
+	@CCControl(name = "dark time", min = 0, max = 200, external = true)
 	private float _cDarkTime = 0;
-	@CCControl(name = "minBright", min = 0, max = 1)
+	@CCControl(name = "minBright", min = 0, max = 1, external = true)
 	private float _cMinBright = 0;
-	@CCControl(name = "maxBright", min = 0, max = 1)
+	@CCControl(name = "maxBright", min = 0, max = 1, external = true)
 	private float _cMaxBright = 0;
-	@CCControl(name = "bright pow", min = 0, max = 10)
+	@CCControl(name = "bright pow", min = 0, max = 10, external = true)
 	private float _cBrightPow = 0;
 	
 	private CCTexture2D _myRandom;
