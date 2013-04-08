@@ -27,17 +27,17 @@ public class SApp extends CCApp {
 		_myArcball = new CCArcball(this);
 		
 		CCApplicationManager myManager = new CCApplicationManager(SDVIOut.class);
-		myManager.settings().size(1024, 768);
+		myManager.settings().size(1280, 1024);
 		myManager.settings().closeOperation(CCCloseOperation.HIDE_ON_CLOSE);
 		myManager.settings().location(0,0);
-		myManager.settings().display(0);
+		myManager.settings().display(1);
 		myManager.settings().undecorated(true);
 		myManager.settings().appContext(sharedContext);
 		myManager.settings().background(CCColor.BLACK);
-//		myManager.start();
+		myManager.start();
 		_myOutputWindow = (SDVIOut)myManager.app();
-//		_myOutputWindow.mapper(_myPixelMapper);
-//		addControls("output", "output", _myOutputWindow);
+		_myOutputWindow.mapper(_myAnimation.mapper());
+		addControls("output", "output", _myOutputWindow);
 	}
 	
 	long time = System.currentTimeMillis();
@@ -63,7 +63,7 @@ public class SApp extends CCApp {
 		g.pushMatrix();
 		g.translate(-width/2,-height/2);
 		_myAnimation.drawOutput(g);
-//		_myAnimation.drawLayers(g);
+		_myAnimation.drawLayers(g);
 		g.popMatrix();
 		
 		g.strokeWeight(1);

@@ -77,6 +77,10 @@ public class SLightAnimation {
 		_myPixelMapper.foreground(_myForegroundVisualManager.output());
 	}
 	
+	public SPixelMapper mapper(){
+		return _myPixelMapper;
+	}
+	
 	private void initTimeline(CCApp theApp, STimeLineMode theMode){
 		
 		switch(theMode){
