@@ -11,10 +11,6 @@ public class SDVIOut extends CCApp{
 	private int _cYOffset = 0;
 	
 	private SPixelMapper _myMapper;
-
-	public SDVIOut(){
-		
-	}
 	
 	public void mapper(SPixelMapper theGeometry){
 		_myMapper = theGeometry;
@@ -22,11 +18,15 @@ public class SDVIOut extends CCApp{
 	
 	public void draw(){
 		if(_myMapper == null)return;
-		
 		g.clear();
+		g.noBlend();
 		g.pushMatrix();
 		g.translate(-width/2 + _cXOffset, height/2 - _cYOffset);
 		_myMapper.drawOutput(g);
 		g.popMatrix();
+	}
+	
+	public static void main(String[] args) {
+		
 	}
 }
