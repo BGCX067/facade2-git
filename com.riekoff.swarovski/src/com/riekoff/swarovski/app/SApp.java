@@ -22,7 +22,7 @@ public class SApp extends CCApp {
     
 	@Override
 	public void setup() {
-		_myAnimation = new SLightAnimation(this, STimeLineMode.OFF);
+		_myAnimation = new SLightAnimation(this, STimeLineMode.AUTO);
 		
 		_myArcball = new CCArcball(this);
 		
