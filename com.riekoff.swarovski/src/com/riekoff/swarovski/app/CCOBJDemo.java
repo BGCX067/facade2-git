@@ -17,6 +17,8 @@ import cc.creativecomputing.timeline.view.swing.SwingTimelineContainer;
 import com.riekoff.swarovski.SOutputWindow;
 import com.riekoff.swarovski.visual.SNoiseCurveVisual;
 import com.riekoff.swarovski.visual.SNoiseWavesVisual;
+import com.riekoff.swarovski.visual.SQuadVisual;
+import com.riekoff.swarovski.visual.SRandomSines;
 import com.riekoff.swarovski.visual.STextureVisual;
 import com.riekoff.swarovski.visual.SVisualManager;
 
@@ -44,24 +46,14 @@ public class CCOBJDemo extends CCApp {
     
 	@Override
 	public void setup() {
-//		CCApplicationManager myManager = new CCApplicationManager(SDVIOut.class);
-//		myManager.settings().size(1024, 768);
-//		myManager.settings().closeOperation(CCCloseOperation.HIDE_ON_CLOSE);
-//		myManager.settings().location(0,0);
-////		myManager.settings().display(1);
-//		myManager.settings().undecorated(true);
-//		myManager.settings().appContext(sharedContext);
-//		myManager.settings().background(CCColor.BLACK);
-//		myManager.start();
 		
-		
-		_myTimeline = new TimelineContainer();
-		_myTimeline.minZoomRange(5);
-		_myTimeline.maxZoomRange(120);
-		_myTimelineConnection = new CCUITimelineConnector(this, _myTimeline);
-		_myTimeline.setSize(1900, 500);
-		_myTimeline.loadFile("first_shoot.xml");
-		_myTimeline.play();
+//		_myTimeline = new TimelineContainer();
+//		_myTimeline.minZoomRange(5);
+//		_myTimeline.maxZoomRange(120);
+//		_myTimelineConnection = new CCUITimelineConnector(this, _myTimeline);
+//		_myTimeline.setSize(1900, 500);
+//		_myTimeline.loadFile("pres03.xml");
+//		_myTimeline.play();
 		
 		_myModel = CCContent3dIO.createModel("simmodel02.obj");
 		for(String myString:_myModel.groupNames()){
@@ -79,12 +71,16 @@ public class CCOBJDemo extends CCApp {
 		addControls("background","manager", 0, _myBackgroundVisualManager);
 		
 		SNoiseCurveVisual myVisual = new SNoiseCurveVisual(ledMapWidth * 3, ledMapHeight);
-		_myBackgroundVisualManager.addVisual(myVisual);
+//		_myBackgroundVisualManager.addVisual(myVisual);
 		addControls("background","noise curve", 0, myVisual);
 		
 		SNoiseWavesVisual myWaveVisual = new SNoiseWavesVisual(ledMapWidth * 3, ledMapHeight);
 		_myBackgroundVisualManager.addVisual(myWaveVisual);
 		addControls("background","noise wave", 1, myWaveVisual);
+		
+		SRandomSines myRandomSines = new SRandomSines(ledMapWidth * 3, ledMapHeight);
+		_myBackgroundVisualManager.addVisual(myRandomSines);
+		addControls("background","randomSines", 2, myRandomSines);
 		
 		_myForegroundVisualManager = new SVisualManager(g, ledMapWidth * 3, ledMapHeight);
 		addControls("foreground","manager", 0, _myForegroundVisualManager);
@@ -97,6 +93,14 @@ public class CCOBJDemo extends CCApp {
 		_myForegroundVisualManager.addVisual(mySwanVisual);
 		addControls("foreground","swan", 2, mySwanVisual);
 		
+		SQuadVisual myQuadVisual = new SQuadVisual(ledMapWidth * 3, ledMapHeight, "swan2.png");
+		_myForegroundVisualManager.addVisual(myQuadVisual);
+		addControls("foreground","quad", 3, myQuadVisual);
+		
+		SNoiseWavesVisual myWaveVisual2 = new SNoiseWavesVisual(ledMapWidth * 3, ledMapHeight);
+		_myForegroundVisualManager.addVisual(myWaveVisual2);
+		addControls("foreground","noise wave", 1, myWaveVisual2);
+		
 		
 		_myModelDrawer = new SModelDrawer(_myModel);
 		
@@ -105,7 +109,16 @@ public class CCOBJDemo extends CCApp {
 		_myPixelMapper.background(_myBackgroundVisualManager.output());
 		_myPixelMapper.foreground(_myForegroundVisualManager.output());
 		
-//		_myOutputWindow = (SDVIOut)myManager.app();
+		CCApplicationManager myManager = new CCApplicationManager(SDVIOut.class);
+		myManager.settings().size(1024, 768);
+		myManager.settings().closeOperation(CCCloseOperation.HIDE_ON_CLOSE);
+		myManager.settings().location(0,0);
+		myManager.settings().display(0);
+		myManager.settings().undecorated(true);
+		myManager.settings().appContext(sharedContext);
+		myManager.settings().background(CCColor.BLACK);
+//		myManager.start();
+		_myOutputWindow = (SDVIOut)myManager.app();
 //		_myOutputWindow.mapper(_myPixelMapper);
 //		addControls("output", "output", _myOutputWindow);
 	}
@@ -115,7 +128,7 @@ public class CCOBJDemo extends CCApp {
 
 	@Override
 	public void update(final float theDeltaTime) {
-		_myTimeline.update(theDeltaTime);
+//		_myTimeline.update(theDeltaTime);
 		_myBackgroundVisualManager.update(theDeltaTime);
 		_myForegroundVisualManager.update(theDeltaTime);
 		
@@ -162,10 +175,10 @@ public class CCOBJDemo extends CCApp {
 
 	public static void main(String[] args) {
 		final CCApplicationManager myManager = new CCApplicationManager(CCOBJDemo.class);
-		myManager.settings().size(1900, 900);
+		myManager.settings().size(1500, 800);
 		myManager.settings().antialiasing(8);
 		myManager.settings().vsync(false);
-//		myManager.settings().appContext(sharedContext);
+		myManager.settings().appContext(sharedContext);
 		myManager.start();
 	}
 }

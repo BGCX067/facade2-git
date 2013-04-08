@@ -31,6 +31,7 @@ public class SSineBlend extends CCApp{
 	@Override
 	public void setup() {
 		addControls("app", "app", this);
+		
 		_myTriSignal = new CCTriSignal();
 	}
 	
@@ -53,9 +54,10 @@ public class SSineBlend extends CCApp{
 	public static void main(String[] args) {
 		CCApplicationManager myManager = new CCApplicationManager(SSineBlend.class);
 		myManager.settings().size(1024, 768);
+		myManager.settings().location(0, 0);
 		myManager.settings().antialiasing(8);
 		myManager.settings().undecorated(true);
-		myManager.settings().display(1);
+		myManager.settings().display(0);
 		myManager.settings().uiTranslation(100, 100);
 		myManager.start();
 	}
