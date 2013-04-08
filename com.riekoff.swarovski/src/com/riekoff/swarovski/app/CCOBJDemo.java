@@ -12,9 +12,7 @@ import cc.creativecomputing.model.CCContent3dIO;
 import cc.creativecomputing.model.CCModel;
 import cc.creativecomputing.timeline.CCUITimelineConnector;
 import cc.creativecomputing.timeline.view.TimelineContainer;
-import cc.creativecomputing.timeline.view.swing.SwingTimelineContainer;
 
-import com.riekoff.swarovski.SOutputWindow;
 import com.riekoff.swarovski.visual.SNoiseCurveVisual;
 import com.riekoff.swarovski.visual.SNoiseWavesVisual;
 import com.riekoff.swarovski.visual.SQuadVisual;
