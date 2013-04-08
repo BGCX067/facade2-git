@@ -11,9 +11,9 @@ import cc.creativecomputing.math.CCVector3f;
 
 public class SNoiseWavesVisual extends SVisual {
 
-	@CCControl(name = "noiseScaleX", min = 0, max = 100, external = true)
+	@CCControl(name = "noiseScaleX", min = 0, max = 10, external = true)
 	private float _cNoiseScaleX = 1;
-	@CCControl(name = "noiseScaleY", min = 0, max = 100, external = true)
+	@CCControl(name = "noiseScaleY", min = 0, max = 10, external = true)
 	private float _cNoiseScaleY = 1;
 	@CCControl(name = "speed x", min = 0, max = 1, external = true)
 	private float _cNoiseSpeedX = 1;
@@ -23,6 +23,10 @@ public class SNoiseWavesVisual extends SVisual {
 	private float _cNoiseSpeedZ = 1;
 	@CCControl(name = "pow", min = 0, max = 10, external = true)
 	private float _cNoisePow = 1;
+	@CCControl(name = "min", min = 0, max = 3, external = true)
+	private float _cNoiseMin = 1;
+	@CCControl(name = "max", min = 0, max = 3, external = true)
+	private float _cNoiseMax = 1;
 	@CCControl(name = "alpha", min = 0, max = 1, external = true)
 	private float _cAlpha = 1;
 
@@ -30,6 +34,7 @@ public class SNoiseWavesVisual extends SVisual {
 	private CGparameter _myNoiseScaleParameter;
 	private CGparameter _myNoiseOffsetParameter;
 	private CGparameter _myNoisePowParameter;
+	private CGparameter _myNoiseMinMaxParameter;
 	private CGparameter _myNoiseAlphaParameter;
 
 	private CCVector3f _myOffset;
@@ -41,6 +46,7 @@ public class SNoiseWavesVisual extends SVisual {
 		_myNoiseScaleParameter = _myNoiseShader.fragmentParameter("noiseScale");
 		_myNoiseOffsetParameter = _myNoiseShader.fragmentParameter("noiseOffset");
 		_myNoisePowParameter = _myNoiseShader.fragmentParameter("noisePow");
+		_myNoiseMinMaxParameter = _myNoiseShader.fragmentParameter("minMax");
 		_myNoiseAlphaParameter = _myNoiseShader.fragmentParameter("alpha");
 		_myNoiseShader.load();
 
@@ -63,6 +69,7 @@ public class SNoiseWavesVisual extends SVisual {
 		_myNoiseShader.parameter(_myNoiseOffsetParameter, _myOffset);
 		_myNoiseShader.parameter(_myNoisePowParameter, _cNoisePow);
 		_myNoiseShader.parameter(_myNoiseAlphaParameter, _cAlpha);
+		_myNoiseShader.parameter(_myNoiseMinMaxParameter, _cNoiseMin, _cNoiseMax);
 		g.rect(0, 0, _myContentWidth, _myContentHeight);
 		_myNoiseShader.end();
 	}

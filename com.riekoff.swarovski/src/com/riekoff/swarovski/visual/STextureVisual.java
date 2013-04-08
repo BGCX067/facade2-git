@@ -8,15 +8,15 @@ import cc.creativecomputing.graphics.texture.CCTextureIO;
 public class STextureVisual extends SVisual{
 
 	
-	@CCControl(name = "scale", min = 0, max = 1, external = true)
+	@CCControl(name = "scale", min = 0, max = 1)
 	private float _cScale = 1f;
-	@CCControl(name = "space", min = 0, max = 10, external = true)
+	@CCControl(name = "space", min = 0, max = 10)
 	private float _cSpace = 0;
-	@CCControl(name = "speed", min = -100, max = 100, external = true)
+	@CCControl(name = "speed", min = -100, max = 100)
 	private float _cSpeed = 0;
-	@CCControl(name = "y", min = 0, max = 1, external = true)
+	@CCControl(name = "y", min = 0, max = 1)
 	private float _cY = 1f;
-	@CCControl(name = "alpha", min = 0, max = 1, external = true)
+	@CCControl(name = "alpha", min = 0, max = 1)
 	private float _cAlpha = 1f;
 
 	private CCTexture2D _myTypo;

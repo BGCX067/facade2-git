@@ -15,7 +15,7 @@ import cc.creativecomputing.graphics.texture.CCTexture2D;
 
 public class SVisualManager {
 	
-	@CCControl(name = "trace", min = 0, max = 1, external = true)
+	@CCControl(name = "trace", min = 0, max = 1)
 	private float _cTrace = 0;
 	
 	private CCRenderBuffer _myRenderBuffer;
@@ -75,12 +75,37 @@ public class SVisualManager {
 	}
 	
 	public void draw(CCGraphics g){
-		g.pushAttribute();
-		_myTraceRenderBuffer.beginDraw();
-		g.clearDepthBuffer();
+//		g.pushAttribute();
+//		_myTraceRenderBuffer.beginDraw();
+//		g.clearDepthBuffer();
 		
 //		g.clearColor(0,0,0,0);
 //		g.clear();
+//		g.pushMatrix();
+//		g.translate(-_myRenderBuffer.width() / 2, - _myRenderBuffer.height()/2);
+//		g.color(0,_cTrace);
+//		g.rect(0,0, _myRenderBuffer.width(), _myRenderBuffer.height());
+//		g.blendMode(CCBlendMode.ADD);
+//		for(SVisual myVisual:_myVisuals){
+//			g.clearDepthBuffer();
+//			myVisual.draw(g);
+//		}
+//		g.popMatrix();
+//		_myTraceRenderBuffer.endDraw();
+//
+//		g.popAttribute();
+//		_myBlur.beginDraw(g);
+//		
+//		g.clearColor(0,0,0);
+//		g.clear();
+//		g.pushMatrix();
+//		g.translate(-_myRenderBuffer.width() / 2, - _myRenderBuffer.height()/2);
+//		g.image(_myTraceRenderBuffer.attachment(0), 0,0);
+//		g.popMatrix();
+//		_myBlur.endDraw(g);
+		
+		_myRenderBuffer.beginDraw();
+		g.clear();
 		g.pushMatrix();
 		g.translate(-_myRenderBuffer.width() / 2, - _myRenderBuffer.height()/2);
 		g.color(0,_cTrace);
@@ -90,25 +115,6 @@ public class SVisualManager {
 			g.clearDepthBuffer();
 			myVisual.draw(g);
 		}
-		g.popMatrix();
-		_myTraceRenderBuffer.endDraw();
-
-		g.popAttribute();
-		_myBlur.beginDraw(g);
-		
-		g.clearColor(0,0,0);
-		g.clear();
-		g.pushMatrix();
-		g.translate(-_myRenderBuffer.width() / 2, - _myRenderBuffer.height()/2);
-		g.image(_myTraceRenderBuffer.attachment(0), 0,0);
-		g.popMatrix();
-		_myBlur.endDraw(g);
-		
-		_myRenderBuffer.beginDraw();
-		g.clear();
-		g.pushMatrix();
-		g.translate(-_myRenderBuffer.width() / 2, - _myRenderBuffer.height()/2);
-		g.image(_myBlur.blurredTexture(), 0,0);
 		g.popMatrix();
 		
 		_myRenderBuffer.endDraw();

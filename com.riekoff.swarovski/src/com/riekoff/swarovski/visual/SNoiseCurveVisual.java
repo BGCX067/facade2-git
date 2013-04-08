@@ -7,37 +7,37 @@ import cc.creativecomputing.math.signal.CCSimplexNoise;
 
 public class SNoiseCurveVisual extends SVisual{
 
-	@CCControl(name = "scale", min = 0f, max = 1, external = true)
+	@CCControl(name = "scale", min = 0f, max = 1)
 	private float _cScale = 0.1f;
 	
-	@CCControl(name = "sub scale", min = 0f, max = 1, external = true)
+	@CCControl(name = "sub scale", min = 0f, max = 1)
 	private float _cSubScale = 0.1f;
 	
-	@CCControl(name = "offset", min = 0, max = 100, external = true)
+	@CCControl(name = "offset", min = 0, max = 100)
 	private float _cOffset = 0f;
 	
-	@CCControl(name = "noise x", min = 0, max = 1000, external = true)
+	@CCControl(name = "noise x", min = 0, max = 1000)
 	private float _cNoiseX = 1f;
 	
-	@CCControl(name = "noise y", min = 0, max = 1000, external = true)
+	@CCControl(name = "noise y", min = 0, max = 1000)
 	private float _cNoiseY = 1f;
 	
-	@CCControl(name = "bands", min = 1, max = 10, external = true)
+	@CCControl(name = "bands", min = 1, max = 10)
 	private float _cBands = 1f;
 	
-	@CCControl(name = "lacunarity", min = 1, max = 10, external = true)
+	@CCControl(name = "lacunarity", min = 1, max = 10)
 	private float _cLacunarity= 1f;
 	
-	@CCControl(name = "gain", min = 0, max = 1, external = true)
+	@CCControl(name = "gain", min = 0, max = 1)
 	private float _cGain = 1f;
 	
-	@CCControl(name = "noise output", min = 0, max = 10, external = true)
+	@CCControl(name = "noise output", min = 0, max = 10)
 	private float _cNoiseOutput = 1f;
 	
-	@CCControl(name = "stroke weight", min = 0, max = 10, external = true)
+	@CCControl(name = "stroke weight", min = 0, max = 10)
 	private float _cStrokeWeight = 1f;
 	
-	@CCControl(name = "alpha", min = 0, max = 1, external = true)
+	@CCControl(name = "alpha", min = 0, max = 1)
 	private float _cAlpha = 0;
 	
 
