@@ -5,6 +5,13 @@
 			<CCUIPresetControl label="presets">
 				<uielements/>
 			</CCUIPresetControl>
+			<CCUIComponent label="animation">
+				<uielements>
+					<CCUISlider label="speed">
+						<preset value="0.33333334"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
 			<CCUIComponent label="geometry">
 				<uielements>
 					<CCUISlider label="random pos min back">
@@ -26,19 +33,19 @@
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="random prob fore">
-						<preset value="0.16"/>
+						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="random pow fore">
-						<preset value="4.866667"/>
+						<preset value="1.0"/>
 					</CCUISlider>
 					<CCUISlider label="min bright">
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="max bright">
-						<preset value="2.8666666"/>
+						<preset value="4.2"/>
 					</CCUISlider>
 					<CCUISlider label="pow bright">
-						<preset value="1.8666667"/>
+						<preset value="1.5333333"/>
 					</CCUISlider>
 					<CCUISlider label="red">
 						<preset value="1.0"/>
@@ -47,7 +54,7 @@
 						<preset value="1.0"/>
 					</CCUISlider>
 					<CCUISlider label="blue">
-						<preset value="0.8666667"/>
+						<preset value="1.0"/>
 					</CCUISlider>
 					<CCUISlider label="pointsize">
 						<preset value="2.5"/>
@@ -67,7 +74,7 @@
 			<CCUIComponent label="manager">
 				<uielements>
 					<CCUISlider label="trace">
-						<preset value="0.17333333"/>
+						<preset value="0.11333334"/>
 						<preset value="0.97333336"/>
 						<preset value="0.97333336"/>
 					</CCUISlider>
@@ -81,17 +88,17 @@
 			<CCUIComponent label="randomSines">
 				<uielements>
 					<CCUISlider label="speed">
-						<preset value="20.0"/>
+						<preset value="8.755819"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="freq pow">
-						<preset value="2.1333334"/>
+						<preset value="4.181818"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="dark time">
-						<preset value="12.0"/>
+						<preset value="23.636364"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 					</CCUISlider>
@@ -106,7 +113,7 @@
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="bright pow">
-						<preset value="1.0666667"/>
+						<preset value="1.0"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 					</CCUISlider>
@@ -122,6 +129,26 @@
 	<globalsettings selectedpreset="0" numberofpresets="0" label="global">
 		<presetnames/>
 	</globalsettings>
+	<CCControlPresetTab label="output" selectedpreset="0" numberofpresets="1">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="output">
+				<uielements>
+					<CCUISlider label="x Offset">
+						<preset value="5"/>
+					</CCUISlider>
+					<CCUISlider label="y Offset">
+						<preset value="68"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
 	<CCControlPresetTab label="foreground" selectedpreset="0" numberofpresets="6">
 		<uielements>
 			<CCUIPresetControl label="presets">
@@ -207,79 +234,155 @@
 					</CCUISlider>
 				</uielements>
 			</CCUIComponent>
-			<CCUIComponent label="noise wave">
+			<CCUIComponent label="noise wave 1">
 				<uielements>
 					<CCUISlider label="noiseScaleX">
-						<preset value="2.2666667"/>
+						<preset value="0.45454547"/>
 						<preset value="0.0"/>
-						<preset value="4.133333"/>
-						<preset value="2.6666667"/>
-						<preset value="0.79999995"/>
-						<preset value="10.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="noiseScaleY">
-						<preset value="0.19999999"/>
-						<preset value="3.1999998"/>
-						<preset value="1.0666667"/>
-						<preset value="0.46666667"/>
-						<preset value="5.7999997"/>
-						<preset value="10.0"/>
+						<preset value="5.7272725"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="speed x">
-						<preset value="0.24"/>
-						<preset value="0.0"/>
-						<preset value="0.1"/>
+						<preset value="0.020459019"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
-						<preset value="0.78"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="speed y">
+						<preset value="0.11818182"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="speed z">
+						<preset value="0.2516248"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="pow">
+						<preset value="3.909091"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="min">
+						<preset value="0.19090909"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="max">
+						<preset value="1.0636364"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="alpha">
+						<preset value="0.981919"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+			<CCUIComponent label="noise wave 2">
+				<uielements>
+					<CCUISlider label="noiseScaleX">
+						<preset value="0.16233766"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="noiseScaleY">
+						<preset value="0.8181818"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+					</CCUISlider>
+					<CCUISlider label="speed x">
+						<preset value="0.28152886"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="speed y">
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
-						<preset value="0.19333333"/>
 						<preset value="0.0"/>
-						<preset value="1.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="speed z">
-						<preset value="0.17333333"/>
-						<preset value="0.18666667"/>
-						<preset value="0.11333334"/>
+						<preset value="0.23050494"/>
 						<preset value="0.0"/>
-						<preset value="0.52"/>
-						<preset value="0.26"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="pow">
-						<preset value="4.0"/>
-						<preset value="2.8"/>
-						<preset value="2.8"/>
-						<preset value="5.133333"/>
-						<preset value="2.8"/>
-						<preset value="10.0"/>
+						<preset value="1.6228436"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="min">
-						<preset value="0.35999998"/>
-						<preset value="0.24"/>
-						<preset value="0.22"/>
-						<preset value="0.34"/>
-						<preset value="0.26"/>
-						<preset value="0.06"/>
+						<preset value="0.27069926"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="max">
-						<preset value="1.24"/>
-						<preset value="1.24"/>
-						<preset value="0.86"/>
-						<preset value="1.24"/>
-						<preset value="1.24"/>
-						<preset value="0.96"/>
+						<preset value="1.0090909"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="alpha">
-						<preset value="1.0"/>
-						<preset value="1.0"/>
-						<preset value="1.0"/>
-						<preset value="1.0"/>
-						<preset value="1.0"/>
-						<preset value="1.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
+						<preset value="0.0"/>
 					</CCUISlider>
 				</uielements>
 			</CCUIComponent>

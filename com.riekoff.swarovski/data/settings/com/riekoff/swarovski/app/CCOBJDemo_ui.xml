@@ -170,7 +170,7 @@
 						<preset value="1.3333334"/>
 					</CCUISlider>
 					<CCUISlider label="min">
-						<preset value="0.0"/>
+						<preset value="1.3399999"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 					</CCUISlider>
@@ -180,7 +180,7 @@
 						<preset value="1.0"/>
 					</CCUISlider>
 					<CCUISlider label="alpha">
-						<preset value="0.0"/>
+						<preset value="1.0"/>
 						<preset value="1.0"/>
 						<preset value="1.0"/>
 					</CCUISlider>
@@ -214,7 +214,7 @@
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="bright pow">
-						<preset value="1.0666667"/>
+						<preset value="0.0"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 					</CCUISlider>
@@ -362,7 +362,7 @@
 						<preset value="1.8666667"/>
 					</CCUISlider>
 					<CCUISlider label="width">
-						<preset value="0.79999983"/>
+						<preset value="5.3333335"/>
 						<preset value="0.79999983"/>
 						<preset value="0.79999983"/>
 						<preset value="0.79999983"/>
@@ -378,7 +378,7 @@
 						<preset value="16.0"/>
 					</CCUISlider>
 					<CCUISlider label="speed">
-						<preset value="-3.4666672"/>
+						<preset value="-29.333336"/>
 						<preset value="-3.4666672"/>
 						<preset value="-3.4666672"/>
 						<preset value="-3.4666672"/>
@@ -394,7 +394,7 @@
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="alpha">
-						<preset value="0.0"/>
+						<preset value="0.6333333"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
@@ -470,7 +470,7 @@
 						<preset value="0.96"/>
 					</CCUISlider>
 					<CCUISlider label="alpha">
-						<preset value="1.0"/>
+						<preset value="0.0"/>
 						<preset value="1.0"/>
 						<preset value="1.0"/>
 						<preset value="1.0"/>
