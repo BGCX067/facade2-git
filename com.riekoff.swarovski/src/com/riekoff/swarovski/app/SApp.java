@@ -22,7 +22,7 @@ public class SApp extends CCApp {
     
 	@Override
 	public void setup() {
-		_myAnimation = new SLightAnimation(this, STimeLineMode.AUTO);
+		_myAnimation = new SLightAnimation(this, STimeLineMode.OFF);
 		
 		_myArcball = new CCArcball(this);
 		
@@ -85,7 +85,7 @@ public class SApp extends CCApp {
 
 	public static void main(String[] args) {
 		final CCApplicationManager myManager = new CCApplicationManager(SApp.class);
-		myManager.settings().size(1500, 800);
+		myManager.settings().size(1200, 700);
 		myManager.settings().antialiasing(8);
 		myManager.settings().vsync(false);
 		myManager.settings().appContext(sharedContext);
