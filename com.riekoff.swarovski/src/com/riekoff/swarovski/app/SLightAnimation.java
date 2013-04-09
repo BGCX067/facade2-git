@@ -6,6 +6,7 @@ import com.riekoff.swarovski.visual.SRandomSines;
 import com.riekoff.swarovski.visual.SVisualManager;
 
 import cc.creativecomputing.CCApp;
+import cc.creativecomputing.control.CCControl;
 import cc.creativecomputing.graphics.CCGraphics;
 import cc.creativecomputing.model.CCContent3dIO;
 import cc.creativecomputing.model.CCModel;
@@ -14,6 +15,9 @@ import cc.creativecomputing.timeline.view.TimelineContainer;
 import cc.creativecomputing.timeline.view.swing.SwingTimelineContainer;
 
 public class SLightAnimation {
+	
+	@CCControl(name = "speed", min = 0, max = 10)
+	private float _cSpeed = 1f;
 	
 	private CCUITimelineConnector _myTimelineConnection;
 //	private SwingTimelineContainer _myTimeline;
@@ -51,7 +55,8 @@ public class SLightAnimation {
 		_myPixelMapper.addMappings("pixelmaskA5.jpg", 0, 434,0);
 		_myPixelMapper.addMappings("pixelmaskB5.jpg", 435, 564,250);
 		_myPixelMapper.createMesh();
-		
+
+		theApp.addControls("app","animation", 0, this);
 		theApp.addControls("app", "geometry", 0, _myPixelMapper);
 		_myBackgroundVisualManager = new SVisualManager(theApp.g, ledMapWidth * 3, ledMapHeight);
 		theApp.addControls("background","manager", 0, _myBackgroundVisualManager);
@@ -92,13 +97,13 @@ public class SLightAnimation {
 			return;
 		case AUTO:
 			_myTimeline = new TimelineContainer();
-			_myTimeline.loadFile("130408_pres01.xml");
+			_myTimeline.loadFile("130408_pres03.xml");
 			_myTimeline.play();
 			break;
 		case EDIT:
 			_myTimeline = new SwingTimelineContainer();
 			_myTimeline.minZoomRange(5);
-			_myTimeline.maxZoomRange(120);
+			_myTimeline.maxZoomRange(1200);
 			_myTimeline.setSize(1900, 500);
 			break;
 		}
@@ -107,7 +112,10 @@ public class SLightAnimation {
 	}
 	
 	public void update(final float theDeltaTime) {
-		if(_myTimeline != null)_myTimeline.update(theDeltaTime);
+		if(_myTimeline != null){
+			_myTimeline.speed(_cSpeed);
+			_myTimeline.update(theDeltaTime);
+		}
 		_myBackgroundVisualManager.update(theDeltaTime);
 		_myForegroundVisualManager.update(theDeltaTime);
 		
