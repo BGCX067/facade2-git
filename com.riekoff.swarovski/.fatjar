@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Mon Apr 08 13:34:23 CEST 2013
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=swarovski.jar
+manifest.mergeall=true
+manifest.mainclass=
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<jar|jogl.all.jar>;<jar|jogl.cg.jar>;<jar|QTJava.zip>;<jar|gstreamer-java.jar>;<jar|jna.jar>;<jar|jartest.jar>;<jar|gluegen-rt.jar>;<jar|gluegen.jar>;<jar|jocl.jar>;<jar|junit.jar>;<jar|org.hamcrest.core_1.1.0.v20090501071000.jar>
+includes=
