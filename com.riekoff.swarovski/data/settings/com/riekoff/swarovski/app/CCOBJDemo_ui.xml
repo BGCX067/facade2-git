@@ -35,7 +35,7 @@
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="max bright">
-						<preset value="2.8666666"/>
+						<preset value="1.1333333"/>
 					</CCUISlider>
 					<CCUISlider label="pow bright">
 						<preset value="1.8666667"/>
@@ -180,7 +180,7 @@
 						<preset value="1.0"/>
 					</CCUISlider>
 					<CCUISlider label="alpha">
-						<preset value="1.0"/>
+						<preset value="0.0"/>
 						<preset value="1.0"/>
 						<preset value="1.0"/>
 					</CCUISlider>
@@ -199,7 +199,7 @@
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="dark time">
-						<preset value="200.0"/>
+						<preset value="1.3333334"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 					</CCUISlider>
@@ -214,7 +214,7 @@
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="bright pow">
-						<preset value="0.0"/>
+						<preset value="0.19999999"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 					</CCUISlider>
@@ -230,6 +230,26 @@
 	<globalsettings selectedpreset="0" numberofpresets="0" label="global">
 		<presetnames/>
 	</globalsettings>
+	<CCControlPresetTab label="output" selectedpreset="0" numberofpresets="1">
+		<uielements>
+			<CCUIPresetControl label="presets">
+				<uielements/>
+			</CCUIPresetControl>
+			<CCUIComponent label="output">
+				<uielements>
+					<CCUISlider label="x Offset">
+						<preset value="5"/>
+					</CCUISlider>
+					<CCUISlider label="y Offset">
+						<preset value="66"/>
+					</CCUISlider>
+				</uielements>
+			</CCUIComponent>
+		</uielements>
+		<presetnames>
+			<presetname name="Preset:0"/>
+		</presetnames>
+	</CCControlPresetTab>
 	<CCControlPresetTab label="foreground" selectedpreset="0" numberofpresets="6">
 		<uielements>
 			<CCUIPresetControl label="presets">
@@ -266,7 +286,7 @@
 						<preset value="0.85333335"/>
 					</CCUISlider>
 					<CCUISlider label="space">
-						<preset value="0.39999998"/>
+						<preset value="0.12666667"/>
 						<preset value="0.39999998"/>
 						<preset value="0.39999998"/>
 						<preset value="0.39999998"/>
@@ -302,7 +322,7 @@
 			<CCUIComponent label="swan">
 				<uielements>
 					<CCUISlider label="scale">
-						<preset value="1.0"/>
+						<preset value="0.8466667"/>
 						<preset value="1.0"/>
 						<preset value="1.0"/>
 						<preset value="1.0"/>
@@ -310,7 +330,7 @@
 						<preset value="1.0"/>
 					</CCUISlider>
 					<CCUISlider label="space">
-						<preset value="3.7272727"/>
+						<preset value="1.8533332"/>
 						<preset value="3.7272727"/>
 						<preset value="3.7272727"/>
 						<preset value="3.7272727"/>
@@ -318,7 +338,7 @@
 						<preset value="3.7272727"/>
 					</CCUISlider>
 					<CCUISlider label="speed">
-						<preset value="-36.363636"/>
+						<preset value="-30.666664"/>
 						<preset value="-36.363636"/>
 						<preset value="-36.363636"/>
 						<preset value="-36.363636"/>
@@ -394,7 +414,7 @@
 						<preset value="0.0"/>
 					</CCUISlider>
 					<CCUISlider label="alpha">
-						<preset value="0.6333333"/>
+						<preset value="0.0"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>
 						<preset value="0.0"/>

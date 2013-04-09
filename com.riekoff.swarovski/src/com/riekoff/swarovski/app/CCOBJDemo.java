@@ -111,14 +111,14 @@ public class CCOBJDemo extends CCApp {
 		myManager.settings().size(1024, 768);
 		myManager.settings().closeOperation(CCCloseOperation.HIDE_ON_CLOSE);
 		myManager.settings().location(0,0);
-		myManager.settings().display(0);
+		myManager.settings().display(1);
 		myManager.settings().undecorated(true);
 		myManager.settings().appContext(sharedContext);
 		myManager.settings().background(CCColor.BLACK);
-//		myManager.start();
+		myManager.start();
 		_myOutputWindow = (SDVIOut)myManager.app();
-//		_myOutputWindow.mapper(_myPixelMapper);
-//		addControls("output", "output", _myOutputWindow);
+		_myOutputWindow.mapper(_myPixelMapper);
+		addControls("output", "output", _myOutputWindow);
 	}
 	
 	long time = System.currentTimeMillis();
